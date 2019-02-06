@@ -31,7 +31,14 @@
             </button>
         </div>
     </div>
-    <div class="row search-content"></div>
+    <div class="row search-content" v-if="searchResult">
+        <div class="col-md-4 col-sm-12 thumbnail" v-for="item in searchResult">
+            <p>
+                <a v-on:click="showMovie(item.imdbId)"><img class="img-thumbnail" :src="item.poster" :alt="item.title" width="300" height="455" /></a>
+            </p>
+            <h4>{{item.title}}</h4>
+        </div>
+    </div>
     <div class="row paginator">
 
     </div>

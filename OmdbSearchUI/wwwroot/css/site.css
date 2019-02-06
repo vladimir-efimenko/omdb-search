@@ -1,4 +1,33 @@
-﻿header {
+﻿* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
     height: 100px;
     background-color: gray;
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+main {
+    margin-top: 50px;
+}
+
+.row {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.search-panel > * {
+    height: 50px;
+}
+
+.search-panel > input {
+    margin-right: 10px;
+}
+
+.search-panel > button {
+    font-size: 20px;    
 }
